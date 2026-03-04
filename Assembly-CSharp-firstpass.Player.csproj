@@ -661,6 +661,10 @@
       <Project>{3d15123a-8ca7-5acc-cf8b-f04013533a79}</Project>
       <Name>Opsive.GraphDesigner.Runtime.Wrappers.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Player.csproj">
+      <Project>{c3580231-7bb3-b0ad-dc8d-0b6e36643b2f}</Project>
+      <Name>Unity.AI.Navigation.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.ScriptableBuildPipeline.Player.csproj">
       <Project>{3fec4a91-c9b6-e505-f5f9-271a38bd03f1}</Project>
       <Name>Unity.ScriptableBuildPipeline.Player</Name>

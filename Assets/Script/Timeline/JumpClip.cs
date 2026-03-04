@@ -10,6 +10,7 @@ public class JumpClip:PlayableAsset, ITimelineClipAsset
     {
         var playable = ScriptPlayable<JumpBehaviour>.Create(graph, template);
         return playable;
+        var state = new AnimationState();
     }
 
 }

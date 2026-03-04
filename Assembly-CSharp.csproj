@@ -59,8 +59,12 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Battle\LogicMgr.cs" />
     <Compile Include="Assets\Script\Timeline\JumpTrack.cs" />
+    <Compile Include="Assets\linetest.cs" />
+    <Compile Include="Assets\LinesForUGUI\Base\ComponentConverter.cs" />
+    <Compile Include="Assets\Scripts\PerlinWorm.cs" />
     <Compile Include="Assets\Script\DesignerModel\Factory.cs" />
     <Compile Include="Assets\Script\Timeline\JumpMixer.cs" />
+    <Compile Include="Assets\Script\StudyTestScript\GimbalLockDemo.cs" />
     <Compile Include="Assets\Script\Battle\Buff.cs" />
     <Compile Include="Assets\Script\Timeline\JumpBehaviour.cs" />
     <Compile Include="Assets\AnimatorBehavior.cs" />
@@ -68,9 +72,14 @@
     <Compile Include="Assets\Script\Timeline\JumpClip.cs" />
     <Compile Include="Assets\Script\Battle\LogicNode.cs" />
     <Compile Include="Assets\Script\Battle\LogicNodeContainer.cs" />
+    <Compile Include="Assets\LinesForUGUI\LinesForUGUI.cs" />
+    <Compile Include="Assets\LinesForUGUI\Base\LineInfo.cs" />
+    <Compile Include="Assets\LinesForUGUI\Base\PointInfo.cs" />
     <Compile Include="Assets\Script\Common\DataMixer.cs" />
+    <Compile Include="Assets\Scripts\UI Line Renderer\UILineRenderer.cs" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uxml\ProfilerModules\memory-profiler-window.uxml" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Journaling\entities-journaling-content_dark.uss" />
+    <None Include="Library\PackageCache\com.unity.ai.navigation@1.1.6\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Hierarchy\hierarchy-item.uss" />
     <None Include="Library\PackageCache\com.unity.settings-manager@2.0.1\package.json" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Common\foldout-with-action-button.uss" />
@@ -125,6 +134,7 @@
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Journaling\entities-journaling-content_light.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uxml\Inspector\entity-inspector-relationships-tab.uxml" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uxml\Hierarchy\hierarchy-item.uxml" />
+    <None Include="Assets\LinesForUGUI\LinesForUGUI.shader" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Components\components-window_light.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Inspector\tag-component-element.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uxml\Preferences\preferences-setting.uxml" />
@@ -292,6 +302,7 @@
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Inspector\component-header.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Controls\TabView\tab-view_dark.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Common\entity-view.uss" />
+    <None Include="Library\PackageCache\com.unity.ai.navigation@1.1.6\package.json" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Hierarchy\hierarchy.uss" />
     <None Include="Library\PackageCache\com.unity.modules.xr@1.0.0\package.json" />
     <None Include="Library\PackageCache\com.unity.profiling.core@1.0.2\package.json" />
@@ -1066,6 +1077,10 @@
       <Project>{2d140132-b4d7-e774-08b1-d9ff2c794811}</Project>
       <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.csproj">
+      <Project>{4c4cefbd-1fc7-f6ac-a916-de5459587ab3}</Project>
+      <Name>Unity.AI.Navigation</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Burst.Editor.csproj">
       <Project>{c65e631e-7aa3-bdcd-ed7b-ffa75bf52f0f}</Project>
       <Name>Unity.Burst.Editor</Name>
@@ -1137,6 +1152,10 @@
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{5ab179f1-773c-8faf-086c-9f985c848ede}</Project>
       <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
+      <Project>{c1accded-5525-84c6-31cb-63e71562a667}</Project>
+      <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{754afed0-97cb-46b2-7ac3-b2a9ddcc8474}</Project>
@@ -1234,6 +1253,10 @@
       <Project>{b9af2595-9b4b-e87c-4d37-39826074065d}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Updater.csproj">
+      <Project>{cb853eb4-1cd5-fd5b-1dd4-3e8457d7a3ad}</Project>
+      <Name>Unity.AI.Navigation.Updater</Name>
+    </ProjectReference>
     <ProjectReference Include="Opsive.BehaviorDesigner.Editor.Controls.NodeViews.csproj">
       <Project>{4ca62465-b0ce-657a-2e15-e260f3ed42bb}</Project>
       <Name>Opsive.BehaviorDesigner.Editor.Controls.NodeViews</Name>
@@ -1257,6 +1280,10 @@
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{ebfdefab-ab81-4f7e-0df0-9b29bd42107e}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Editor.csproj">
+      <Project>{2e0fa38c-6e75-dde7-d0a2-75420ef0c52a}</Project>
+      <Name>Unity.AI.Navigation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Extensions.csproj">
       <Project>{bed46137-bc40-645e-eb7a-f34ef731392a}</Project>

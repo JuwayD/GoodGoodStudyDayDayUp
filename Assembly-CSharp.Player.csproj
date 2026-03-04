@@ -59,8 +59,12 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Battle\LogicMgr.cs" />
     <Compile Include="Assets\Script\Timeline\JumpTrack.cs" />
+    <Compile Include="Assets\linetest.cs" />
+    <Compile Include="Assets\LinesForUGUI\Base\ComponentConverter.cs" />
+    <Compile Include="Assets\Scripts\PerlinWorm.cs" />
     <Compile Include="Assets\Script\DesignerModel\Factory.cs" />
     <Compile Include="Assets\Script\Timeline\JumpMixer.cs" />
+    <Compile Include="Assets\Script\StudyTestScript\GimbalLockDemo.cs" />
     <Compile Include="Assets\Script\Battle\Buff.cs" />
     <Compile Include="Assets\Script\Timeline\JumpBehaviour.cs" />
     <Compile Include="Assets\AnimatorBehavior.cs" />
@@ -68,7 +72,11 @@
     <Compile Include="Assets\Script\Timeline\JumpClip.cs" />
     <Compile Include="Assets\Script\Battle\LogicNode.cs" />
     <Compile Include="Assets\Script\Battle\LogicNodeContainer.cs" />
+    <Compile Include="Assets\LinesForUGUI\LinesForUGUI.cs" />
+    <Compile Include="Assets\LinesForUGUI\Base\LineInfo.cs" />
+    <Compile Include="Assets\LinesForUGUI\Base\PointInfo.cs" />
     <Compile Include="Assets\Script\Common\DataMixer.cs" />
+    <Compile Include="Assets\Scripts\UI Line Renderer\UILineRenderer.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.53f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.dll</HintPath>
     </Reference>
@@ -675,6 +683,10 @@
     <ProjectReference Include="Opsive.GraphDesigner.Runtime.Wrappers.Player.csproj">
       <Project>{3d15123a-8ca7-5acc-cf8b-f04013533a79}</Project>
       <Name>Opsive.GraphDesigner.Runtime.Wrappers.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Player.csproj">
+      <Project>{c3580231-7bb3-b0ad-dc8d-0b6e36643b2f}</Project>
+      <Name>Unity.AI.Navigation.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ScriptableBuildPipeline.Player.csproj">
       <Project>{3fec4a91-c9b6-e505-f5f9-271a38bd03f1}</Project>

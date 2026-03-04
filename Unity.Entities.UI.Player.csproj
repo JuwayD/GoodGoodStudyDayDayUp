@@ -288,6 +288,9 @@
     <Reference Include="Opsive.GraphDesigner.Runtime">
       <HintPath>D:\UnityWorkSpace\GoodGoodStudyDayDayUp\Packages\com.opsive.graphdesigner\Runtime\Opsive.GraphDesigner.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\UnityWorkSpace\GoodGoodStudyDayDayUp\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.53f1c1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
     </Reference>

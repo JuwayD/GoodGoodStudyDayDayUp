@@ -128,6 +128,7 @@
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Content\entity-info.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uxml\Journaling\entities-journaling-details-component.uxml" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uxml\ActiveBuildConfiguration\active-build-config-popup.uxml" />
+    <None Include="Library\PackageCache\com.coplaydev.unity-mcp@d76a8df311\package.json" />
     <None Include="Library\PackageCache\com.unity.test-framework.performance@3.0.3\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Journaling\entities-journaling-details-component_light.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Journaling\search-and-goto-buttons.uss" />
@@ -240,11 +241,13 @@
     <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uxml\ProfilerModules\memory-profiler-tree-view-item.uxml" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\Unity.Entities.UI\uxml\complicated-type-test.uxml" />
+    <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\link.xml" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Journaling\entities-journaling-window_light.uss" />
     <None Include="Library\PackageCache\com.unity.modules.wind@1.0.0\package.json" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\ProfilerModules\structural-changes-profiler-window_light.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\Journaling\entities-journaling-details.uss" />
     <None Include="Library\PackageCache\com.unity.modules.umbra@1.0.0\package.json" />
+    <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\package.json" />
     <None Include="Library\PackageCache\com.unity.cinemachine@2.10.3\license.txt" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\ProfilerModules\memory-profiler-tree-view-item.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\ProfilerModules\memory-profiler-left-pane_dark.uss" />
@@ -307,6 +310,7 @@
     <None Include="Library\PackageCache\com.unity.modules.xr@1.0.0\package.json" />
     <None Include="Library\PackageCache\com.unity.profiling.core@1.0.2\package.json" />
     <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.7\Editor Resources\Shaders\TMP_Properties.cginc" />
+    <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\AOT\Newtonsoft.Json.xml" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\Unity.Entities.UI\uxml\build-configuration.uxml" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\SystemSchedule\system-schedule_dark.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uxml\Inspector\entity-inspector-components-tab.uxml" />
@@ -359,6 +363,7 @@
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\Unity.Entities.UI\uss\build-configuration_light.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\StyleSheets\Extensions\light.uss" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\uss\SystemSchedule\system-schedule-toolbar.uss" />
+    <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.xml" />
     <None Include="Library\PackageCache\com.unity.collections@2.5.1\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.burst@1.8.18\Unity.Burst.Unsafe.xml" />
     <None Include="Library\PackageCache\com.unity.entities@1.3.8\Editor Default Resources\Unity.Entities.UI\uss\install-quick-search-popup.uss" />
@@ -677,6 +682,9 @@
     </Reference>
     <Reference Include="Sirenix.OdinValidator.Editor">
       <HintPath>D:\UnityWorkSpace\GoodGoodStudyDayDayUp\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinValidator.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\UnityWorkSpace\GoodGoodStudyDayDayUp\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.53f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -1153,6 +1161,10 @@
       <Project>{5ab179f1-773c-8faf-086c-9f985c848ede}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
+    <ProjectReference Include="MCPForUnity.Editor.csproj">
+      <Project>{7e41fa31-817f-248b-b49d-aae40cf31cc8}</Project>
+      <Name>MCPForUnity.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
       <Project>{c1accded-5525-84c6-31cb-63e71562a667}</Project>
       <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
@@ -1168,6 +1180,10 @@
     <ProjectReference Include="Unity.Mathematics.Extensions.Hybrid.csproj">
       <Project>{23c3ac99-ae9d-f422-ff1b-e74ab78a0787}</Project>
       <Name>Unity.Mathematics.Extensions.Hybrid</Name>
+    </ProjectReference>
+    <ProjectReference Include="MCPForUnity.Runtime.csproj">
+      <Project>{1065c6c2-4bc5-a9c0-ec33-1433a1aba23c}</Project>
+      <Name>MCPForUnity.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
       <Project>{ab29b21f-4d16-22a5-bb8b-9c949a1ef782}</Project>

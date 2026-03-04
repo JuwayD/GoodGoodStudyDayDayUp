@@ -308,6 +308,9 @@
     <Reference Include="Opsive.GraphDesigner.Runtime">
       <HintPath>D:\UnityWorkSpace\GoodGoodStudyDayDayUp\Packages\com.opsive.graphdesigner\Runtime\Opsive.GraphDesigner.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\UnityWorkSpace\GoodGoodStudyDayDayUp\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.53f1c1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
     </Reference>
@@ -731,6 +734,10 @@
     <ProjectReference Include="Unity.Mathematics.Extensions.Hybrid.Player.csproj">
       <Project>{0a8f374e-9fc3-1e5e-a2eb-2e2fefc07679}</Project>
       <Name>Unity.Mathematics.Extensions.Hybrid.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="MCPForUnity.Runtime.Player.csproj">
+      <Project>{82893975-8794-385e-8f19-e9222803ffbd}</Project>
+      <Name>MCPForUnity.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.Player.csproj">
       <Project>{88263b72-bc4b-c3da-04a7-a7fa74b9f378}</Project>

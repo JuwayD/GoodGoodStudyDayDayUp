@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c9bd111ed842142bb76875b7027867, type: 3}
+  m_Name: CoreData
+  m_EditorClassIdentifier: 
+  BuildingName: Core Base
+  Description: The last line of defense. If this falls, the game is over.
+  Type: 0
+  Prefab: {fileID: 328669195395152683, guid: 1dfb02165b3f9b84da34e908c13483a0, type: 3}
+  Icon: {fileID: 0}
+  MaxHealth: 1000
+  ConstructionCost: 0
+  CostType: 0
+  ProductionAmount: 10
+  ProductionInterval: 5
+  AttackDamage: 10
+  AttackRange: 5
+  AttackInterval: 1
